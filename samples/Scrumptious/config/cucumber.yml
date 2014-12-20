@@ -1,0 +1,11 @@
+# config/cucumber.yml
+##YAML Template
+---
+
+# Default profile
+default: --profile dev
+
+reset: RESET_BETWEEN_SCENARIOS=1
+iphone6: DEVICE_TARGET='iPhone 6 (8.1 Simulator)'
+
+dev: -p reset -p iphone6
