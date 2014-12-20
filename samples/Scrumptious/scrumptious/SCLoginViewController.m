@@ -42,6 +42,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.view setAccessibilityIdentifier:@"loginScreen"];
 
     self.loginView.readPermissions = @[@"public_profile", @"user_friends"];
 }

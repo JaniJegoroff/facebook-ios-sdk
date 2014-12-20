@@ -161,6 +161,9 @@ static int const MIN_USER_GENERATED_PHOTO_DIMENSION = 480;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    [self.view setAccessibilityIdentifier:@"mainScreen"];
+    [self.profilePictureButton setAccessibilityIdentifier:@"profilePictureButton"];
 
     self.profilePictureButton.pictureCropping = FBProfilePictureCroppingSquare;
 
