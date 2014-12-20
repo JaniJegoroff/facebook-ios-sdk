@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		167B6FD71A461373003FC42A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B6FD61A461373003FC42A /* CFNetwork.framework */; };
+		167B6FD91A46137C003FC42A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B6FD81A46137C003FC42A /* Security.framework */; };
+		167B6FDB1A461399003FC42A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B6FDA1A461399003FC42A /* FacebookSDK.framework */; };
 		8527EC6815C9DB3800660673 /* Scrumptious.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8527EC6A15C9DB3800660673 /* Scrumptious.strings */; };
-		8534B4DF15CC657900348ED2 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8534B4DE15CC657900348ED2 /* FBUserSettingsViewResources.bundle */; };
 		8592BE3D15816CCC00056680 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8592BE3C15816CCC00056680 /* AddressBook.framework */; };
 		8909D01A18AC55610045446E /* SCShareUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8909D01918AC55610045446E /* SCShareUtility.m */; };
 		890F7115189C5620004A5A27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890F7114189C5620004A5A27 /* Images.xcassets */; };
@@ -30,13 +32,14 @@
 		B9CD0A7E150EA4DD00560A93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CD0A7C150EA4DD00560A93 /* InfoPlist.strings */; };
 		B9CD0A80150EA4DD00560A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CD0A7F150EA4DD00560A93 /* main.m */; };
 		B9CD0A84150EA4DD00560A93 /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CD0A83150EA4DD00560A93 /* SCAppDelegate.m */; };
-		DD55EAAF15AB9EDF000A64B8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD55EAAE15AB9EDF000A64B8 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		167B6FD61A461373003FC42A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		167B6FD81A46137C003FC42A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		167B6FDA1A461399003FC42A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		8527EC6915C9DB3800660673 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Scrumptious.strings; sourceTree = "<group>"; };
 		8527EC6B15C9DB4A00660673 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Scrumptious.strings; sourceTree = "<group>"; };
-		8534B4DE15CC657900348ED2 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../build/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		8592BE3C15816CCC00056680 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		85954AE1155889A200FABA9A /* SCProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProtocols.h; sourceTree = "<group>"; };
 		8909D01818AC55610045446E /* SCShareUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCShareUtility.h; path = scrumptious/SCShareUtility.h; sourceTree = SOURCE_ROOT; };
@@ -75,7 +78,6 @@
 		B9CD0A81150EA4DD00560A93 /* Scrumptious-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scrumptious-Prefix.pch"; sourceTree = "<group>"; };
 		B9CD0A82150EA4DD00560A93 /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
 		B9CD0A83150EA4DD00560A93 /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
-		DD55EAAE15AB9EDF000A64B8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../build/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,13 +85,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167B6FD91A46137C003FC42A /* Security.framework in Frameworks */,
+				167B6FD71A461373003FC42A /* CFNetwork.framework in Frameworks */,
 				890F7119189C6FBC004A5A27 /* QuartzCore.framework in Frameworks */,
 				B9C1C35915129F0E008FA5D1 /* CoreLocation.framework in Frameworks */,
 				B9CD0A74150EA4DD00560A93 /* UIKit.framework in Frameworks */,
+				167B6FDB1A461399003FC42A /* FacebookSDK.framework in Frameworks */,
 				B9CD0A76150EA4DD00560A93 /* Foundation.framework in Frameworks */,
 				B9CD0A78150EA4DD00560A93 /* CoreGraphics.framework in Frameworks */,
 				8592BE3D15816CCC00056680 /* AddressBook.framework in Frameworks */,
-				DD55EAAF15AB9EDF000A64B8 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,9 +136,10 @@
 		B9CD0A72150EA4DD00560A93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				167B6FDA1A461399003FC42A /* FacebookSDK.framework */,
+				167B6FD81A46137C003FC42A /* Security.framework */,
+				167B6FD61A461373003FC42A /* CFNetwork.framework */,
 				890F7118189C6FBC004A5A27 /* QuartzCore.framework */,
-				8534B4DE15CC657900348ED2 /* FBUserSettingsViewResources.bundle */,
-				DD55EAAE15AB9EDF000A64B8 /* FacebookSDK.framework */,
 				8592BE3C15816CCC00056680 /* AddressBook.framework */,
 				B9C1C35815129F0E008FA5D1 /* CoreLocation.framework */,
 				B9CD0A73150EA4DD00560A93 /* UIKit.framework */,
@@ -241,7 +246,6 @@
 				890F7117189C6137004A5A27 /* SCMain.storyboard in Resources */,
 				890F7115189C5620004A5A27 /* Images.xcassets in Resources */,
 				8527EC6815C9DB3800660673 /* Scrumptious.strings in Resources */,
-				8534B4DF15CC657900348ED2 /* FBUserSettingsViewResources.bundle in Resources */,
 				9D084048169CE00B000FD49D /* ReadMe.txt in Resources */,
 				99FAE2271782302A009E0AAE /* FacebookSDKOverrides.bundle in Resources */,
 			);
@@ -291,6 +295,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		167B6FDC1A4613BB003FC42A /* Calabash */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8986C80B1890A6BA004B90DD /* Project-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Calabash;
+		};
+		167B6FDD1A4613BB003FC42A /* Calabash */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8986C80A1890A6BA004B90DD /* Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/janijegoroff/Documents/FacebookSDK,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					CALABASH,
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"\"-ObjC\"",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+				);
+			};
+			name = Calabash;
+		};
 		B9CD0A8E150EA4DE00560A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8986C80B1890A6BA004B90DD /* Project-Debug.xcconfig */;
@@ -311,6 +345,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/janijegoroff/Documents/FacebookSDK,
+				);
 			};
 			name = Debug;
 		};
@@ -320,6 +358,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/janijegoroff/Documents/FacebookSDK,
+				);
 			};
 			name = Release;
 		};
@@ -330,6 +372,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9CD0A8E150EA4DE00560A93 /* Debug */,
+				167B6FDC1A4613BB003FC42A /* Calabash */,
 				B9CD0A8F150EA4DE00560A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -339,6 +382,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9CD0A91150EA4DE00560A93 /* Debug */,
+				167B6FDD1A4613BB003FC42A /* Calabash */,
 				B9CD0A92150EA4DE00560A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
