@@ -1,7 +1,7 @@
 Motivation
 ====================
 
-This a simple example for a classic problem when automating Facebook login scenarios for iOS.
+This simple example provides one solution for a classic problem: automating Facebook login scenarios for iOS.
 
 Facebook iOS SDK example application `Scrumptious` is used for a demo.
 
